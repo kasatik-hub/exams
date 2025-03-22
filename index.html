@@ -23,7 +23,7 @@
         <h3>Профиль</h3>
         <div id="profile-info">
             <label for="avatar-upload">
-                <img id="avatar" src="images/default-avatar.png" alt="Аватар">
+                <img id="avatar" src="default-avatar.png" alt="Аватар">
             </label>
             <input type="file" id="avatar-upload" accept="image/*" onchange="uploadAvatar(event)">
             <p><strong>Email:</strong> <span id="user-email">Не зарегистрирован</span></p>
@@ -39,7 +39,32 @@
         <button id="logout-btn" onclick="logout()">Выйти</button>
     </div>
 
-    <!-- Подключаем JS -->
+    <!-- Вкладки предметов -->
+    <div id="main-tabs" class="tabs">
+        <div class="tab" onclick="showSection('physics')">Физика ОГЭ</div>
+        <div class="tab" onclick="showSection('russian')">Русский ОГЭ</div>
+        <div class="tab" onclick="showSection('math')">Математика ОГЭ</div>
+    </div>
+
+    <!-- Контент вкладок -->
+    <div id="physics" class="content">
+        <h2>Физика ОГЭ</h2>
+        <div class="sub-tabs" id="physics-topics"></div>
+        <button class="back-button" onclick="goBack()">Назад</button>
+    </div>
+
+    <div id="russian" class="content">
+        <h2>Русский ОГЭ</h2>
+        <div class="sub-tabs" id="russian-topics"></div>
+        <button class="back-button" onclick="goBack()">Назад</button>
+    </div>
+
+    <div id="math" class="content">
+        <h2>Математика ОГЭ</h2>
+        <div class="sub-tabs" id="math-topics"></div>
+        <button class="back-button" onclick="goBack()">Назад</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

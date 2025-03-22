@@ -30,5 +30,22 @@ function uploadAvatar(event) {
 // Выход из профиля
 function logout() {
     document.getElementById('user-email').textContent = 'Не зарегистрирован';
-    document.getElementById('avatar').src = 'images/default-avatar.png';
+    document.getElementById('avatar').src = 'default-avatar.png';
+}
+
+// Открытие разделов
+function showSection(sectionId) {
+    document.getElementById('main-tabs').style.display = 'none';
+    document.querySelectorAll('.content').forEach(section => {
+        section.classList.remove('active');
+    });
+    document.getElementById(sectionId).classList.add('active');
+}
+
+// Кнопка "Назад"
+function goBack() {
+    document.getElementById('main-tabs').style.display = 'flex';
+    document.querySelectorAll('.content').forEach(section => {
+        section.classList.remove('active');
+    });
 }
