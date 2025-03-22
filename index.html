@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>Образовательная игра</h1>
 
     <!-- Гамбургер-меню -->
-    <div id="hamburger-menu" class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
+    <div id="hamburger-menu" class="hamburger-menu" onclick="toggleMenu()">
+        <div class="hamburger-icon">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
     </div>
 
-    <!-- Боковая панель профиля -->
+    <!-- Панель профиля -->
     <div id="profile-panel" class="profile-panel">
         <h3>Профиль</h3>
         <div id="profile-info">
@@ -49,19 +50,16 @@
     <!-- Контент вкладок -->
     <div id="physics" class="content">
         <h2>Физика ОГЭ</h2>
-        <div class="sub-tabs" id="physics-topics"></div>
         <button class="back-button" onclick="goBack()">Назад</button>
     </div>
 
     <div id="russian" class="content">
         <h2>Русский ОГЭ</h2>
-        <div class="sub-tabs" id="russian-topics"></div>
         <button class="back-button" onclick="goBack()">Назад</button>
     </div>
 
     <div id="math" class="content">
         <h2>Математика ОГЭ</h2>
-        <div class="sub-tabs" id="math-topics"></div>
         <button class="back-button" onclick="goBack()">Назад</button>
     </div>
 

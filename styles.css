@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    background-color: #f4f4f4;
 }
 
 .tabs {
@@ -30,37 +31,6 @@ body {
     display: block;
 }
 
-.sub-tabs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.sub-tab {
-    padding: 10px;
-    background: #28a745;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.sub-tab:hover {
-    background: #1e7e34;
-}
-
-.back-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #dc3545;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    display: none;
-}
-
-/* Гамбургер-меню */
 .hamburger-menu {
     position: fixed;
     top: 10px;
@@ -84,7 +54,6 @@ body {
     border-radius: 5px;
 }
 
-/* Панель профиля */
 .profile-panel {
     position: fixed;
     top: 0;
@@ -104,12 +73,3 @@ body {
     cursor: pointer;
 }
 
-.profile-panel select {
-    width: 100%;
-    margin-top: 10px;
-}
-
-.profile-panel button {
-    width: 100%;
-    margin-top: 10px;
-}
