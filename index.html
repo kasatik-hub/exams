@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Образовательная игра</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Образовательная игра</h1>
+
+    <!-- Гамбургер-меню -->
+    <div id="hamburger-menu" class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+
+    <!-- Боковая панель профиля -->
+    <div id="profile-panel" class="profile-panel">
+        <h3>Профиль</h3>
+        <div id="profile-info">
+            <label for="avatar-upload">
+                <img id="avatar" src="images/default-avatar.png" alt="Аватар">
+            </label>
+            <input type="file" id="avatar-upload" accept="image/*" onchange="uploadAvatar(event)">
+            <p><strong>Email:</strong> <span id="user-email">Не зарегистрирован</span></p>
+            <p><strong>Рейтинг:</strong> <span id="user-rating">0</span></p>
+            <p><strong>Выбранные предметы:</strong></p>
+            <select id="subject-select" multiple>
+                <option value="Физика">Физика</option>
+                <option value="Русский">Русский</option>
+                <option value="Математика">Математика</option>
+            </select>
+            <button onclick="saveProfile()">Сохранить</button>
+        </div>
+        <button id="logout-btn" onclick="logout()">Выйти</button>
+    </div>
+
+    <!-- Подключаем JS -->
+    <script src="script.js"></script>
+</body>
+</html>

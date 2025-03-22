@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.hamburger-menu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger-icon .line {
+    width: 30px;
+    height: 5px;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+/* Панель профиля */
+.profile-panel {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 250px;
+    height: 100%;
+    background: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
+}
+
+.profile-panel img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-panel select {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.profile-panel button {
+    width: 100%;
+    margin-top: 10px;
+}
